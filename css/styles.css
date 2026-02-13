@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 50px;
+    width: 100%;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 2px solid #BABABA;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav img {
+    max-width: 145px;
+    height: auto;
+    object-fit: contain;
+    image-rendering: crisp-edges;
+}
+
+
+section.hero {
+    margin: 80px;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    background: linear-gradient(to top, #84A9FF 0%, white 55%);
+    border-radius: 0 0 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    min-height: 650px;
+    overflow: hidden;
+    
+}
+
+.text1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins, sans-serif;
+    align-items: center;
+}
+
+.text1 h1 {
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.text1 p {
+    font-weight: 400;
+    font-size: 16px;
+    width: 600px;
+}
+
+.hero-image {
+    width: 923px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: -100px;
+    margin-right: -100px;
+    margin-bottom: -100px;
+    display: block;
+}
+
+section.info {
+    margin: 80px;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.info-content h1{
+    font-family: Inter, sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+    color: #0C0051;
+}
+
+.first {
+    align-self: flex-start;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F7F7;
+    border: 1px solid #E3E3E3;
+    border-radius: 21px;
+    padding: 8px;
+}
+
+.first, .first * {
+    box-sizing: border-box;
+}
+
+.first {
+    width: 100%;
+    max-width: 600px;
+}
+
+.box {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    border-radius: 21px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
