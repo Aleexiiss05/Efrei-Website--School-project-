@@ -1,0 +1,284 @@
+.formations-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+    background-color: #FFFFFF;
+}
+
+.formations-text {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.formations-text h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #170A5C;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.formations-text p {
+    color: #555555;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 400px;
+}
+
+.formations-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.formations-image img {
+    width: 320px;
+    height: auto;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 75%, 75% 100%, 0% 100%, 0% 25%);
+}
+
+.cards-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 10% 60px;
+    background-color: #FFFFFF;
+}
+
+.formation-card {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px 20px;
+    width: 260px;
+    text-align: center;
+    border: 1px solid #F5F5F5;
+}
+
+.card-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.card-line {
+    width: 25px;
+    height: 3px;
+    background-color: #555555;
+    border: none;
+    margin: 10px auto 15px auto;
+}
+
+.formation-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #333333;
+    margin: 0;
+    font-weight: 700;
+}
+
+.formation-card h3 span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #888888;
+    margin-left: 5px;
+}
+
+.info-details-dark {
+    background-color: #263C5A;
+    padding: 80px 10%;
+    color: #FFFFFF;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.detail-item h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.blue-dash {
+    display: inline-block;
+    width: 15px;
+    height: 3px;
+    background-color: #6C95EB;
+    margin-right: 10px;
+}
+
+.detail-item ul {
+    list-style-type: none;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.detail-item ul li {
+    font-size: 12px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+    color: #E2E8F0;
+    position: relative;
+    padding-left: 15px;
+}
+
+.detail-item ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #FFFFFF;
+}
+
+.join-form-section {
+    padding: 80px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.join-form-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    color: #170A5C;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.student-form {
+    width: 100%;
+    max-width: 650px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group.full-width {
+    margin-bottom: 20px;
+}
+
+.input-group label,
+.upload-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.input-group input[type="text"],
+.input-group select,
+.input-group textarea {
+    padding: 12px 15px;
+    border: 1px solid #1A2649;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #333333;
+    background-color: #FFFFFF;
+}
+
+.input-group textarea {
+    resize: vertical;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.radio-item label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+
+.upload-section {
+    margin-bottom: 30px;
+}
+
+.upload-title {
+    margin-bottom: 10px;
+}
+
+.upload-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.upload-item:first-of-type {
+    border-top: 1px solid #EEEEEE;
+}
+
+.upload-item span {
+    font-size: 12px;
+    color: #777777;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #FFFFFF;
+    color: #170A5C;
+    border: 1px solid #170A5C;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .formations-hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .formations-text {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .cards-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+}
