@@ -3,45 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil | Efrei</title>
+    <title>Efrei | Département Informatique</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <a href="./index.html"><li><img src="/img/logo.png" alt="Logo Efrei"></li></a>
-        <a href="./index.html"><li>Accueil</li></a>
-        <a href="./pages/cours.html"><li>Cours & Formations</li></a>
-        <a href="./pages/team.html"><li>Equipe enseignante</li></a>
-        <a href="./pages/about.html"><li>A propos</li></a>
+        <a href="./index.html" class="logo"><img src="./img/logo.png" alt="Logo Efrei"></a>
+        <div class="nav-links">
+            <a href="./index.html" class="active">Accueil</a>
+            <a href="./pages/cours.html" class="flex-link">Cours & Formations <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+            <a href="./pages/team.html">Equipe enseignants</a>
+            <a href="./pages/about.html">A propos</a>
+        </div>
+        <a href="#" class="student-space">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0056b3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill: #0056b3;">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <span>Mon espace<br>Etudiant</span>
+        </a>
     </nav>
 
     <section class="hero">
         <div class="text1">
-            <h1>Département Informatique <br>de l'Efrei</h1>
+            <div class="hero-tag">
+                EFREI MEET YOUR FUTURE 2026 
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </div>
+            <h1>Département Informatique<br>de l'Efrei</h1>
             <p>L’Efrei, Grande École d’ingénieurs généraliste et d’experts du numérique depuis 90 ans, entre dans une nouvelle ère, celle d’un pôle majeur du numérique en Île-de-France et en région bordelaise. Ce projet ambitieux s’ancre dans une collaboration solide avec l’Université Paris Panthéon-Assas, dont l’Efrei fait partie depuis 2022 en tant qu’établissement composante.</p>
-        </div>        <img src="/img/main.png" alt="Main illustration" class="hero-image">    
+        </div>
+        <img src="./img/main.png" alt="Main illustration" class="hero-image">
     </section>
 
     <section class="info">
         <div class="info-content">
-            <h1>Quelques chiffres...</h1>
+            <h2>Quelques chiffres...</h2>
         </div>
-        <div class="grid">
-            <div class="first">
-                <div class="box">
-                    <h1>10</h1>
-                    <p>formations</p>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-header">
+                    <h3>10</h3>
+                    <span>formations</span>
                 </div>
                 <p>Nous vous proposons 10 formations possible en BTS,<br> Bachelor et Master.</p>
             </div>
+            <div class="stat-card">
+                <div class="stat-header">
+                    <h3>Stage & Alternance</h3>
+                    <span>à partir de la 3ème année</span>
+                </div>
+                <p>Des stages de découverte en entreprise sont possible à 3 initial, avec un accompagnement complet. Vous avez également la possibilité de faire votre formation en Alternance et de bénéficier de certains avantages.</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-header">
+                    <h3>95%</h3>
+                    <span>taux de réussite</span>
+                </div>
+                <p>A l'Efrei, vos années d'études supérieures sont assurés par l'enseignement et le suivi qu'on vous apporte.</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-header">
+                    <h3>9 000€</h3>
+                    <span>coût d'une année</span>
+                </div>
+                <p>Tout frais confondus, votre année aura un coût de 9 000€.<br>En alternance, l'année coûtera environ 11 000€ mais cela est aux frais de l'entreprise.</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-header">
+                    <h3>6 mois d'échange</h3>
+                    <span>à l'étranger</span>
+                </div>
+                <p>Grâce à notre programme d'échange universitaire, vous avez la possibilité d'étudier dans un autre pays pendant 6 mois. Vous pouvez en faire la demande dès la 2ème année.</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-header">
+                    <h3>100%</h3>
+                    <span>taux d'insertion professionnelle</span>
+                </div>
+                <p>Après leur cursus, tous nos élèves ont su s'insérer dans le monde professionnel, en France ou à l'étranger.</p>
+            </div>
         </div>
     </section>
-    
+
+    <section class="location">
+        <h2>Où sommes-nous ?</h2>
+        <div class="tabs">
+            <button class="tab active">Campus Paris</button>
+            <button class="tab" style="color:#aaa;">Campus Villejuif</button>
+        </div>
+        <div class="location-card">
+            <div class="location-info">
+                <h3>Campus de Paris</h3>
+                <p>Notre Campus est facilement accessible depuis la station de Métro Villejuif Louis-Aragon. Il est situé à seulement 5 minutes à pieds.<br>Vous pouvez également y accéder depuis le Tramway.</p>
+                <ul class="features">
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> 24 Bd Marechal, Villejuif 94200</li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg> 5 000 élèves</li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg> 21 500 m2</li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path><path d="M7 2v20"></path><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"></path></svg> Restaurant universitaire (CROUS)</li>
+                </ul>
+            </div>
+            <div class="location-image">
+                <div class="image-placeholder">
+                    <h2># ONLY<br>EFREI PARIS</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-bg"></div>
+        <div class="footer-content">
+            <div class="footer-col" style="flex: 1.5; padding-right: 40px;">
+                <h4>Nous contacter</h4>
+                <p>accueil@efrei.net</p>
+                <p>+33 1 94 72 16 44</p>
+            </div>
+            <div class="footer-col">
+                <h4>Liens utiles</h4>
+                <a href="#">Ma rentrée 2026</a>
+                <a href="#">Prérequis matériels</a>
+                <a href="#">S'inscrire à une formation</a>
+                <a href="#">Parcoursup</a>
+            </div>
+            <div class="footer-col">
+                <h4>Liens utiles</h4>
+                <a href="#">Ma rentrée 2026</a>
+                <a href="#">Prérequis matériels</a>
+                <a href="#">S'inscrire à une formation</a>
+            </div>
+            <div class="footer-col">
+                <h4>Formations</h4>
+                <a href="#">BTS</a>
+                <a href="#">Bachelor</a>
+                <a href="#">Mastère</a>
+            </div>
+            <div class="footer-col">
+                <h4>Ressources</h4>
+                <a href="#">BTS</a>
+                <a href="#">Bachelor</a>
+                <a href="#">Mastère</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Efrei - Tous droits réservés</p>
+        </div>
+    </footer>
 </body>
 </html>
