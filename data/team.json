@@ -1,0 +1,37 @@
+[
+    {
+        "nom": "Frederick Meunier",
+        "role": "Directeur de l'Efrei",
+        "image": "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=400&q=80",
+        "citation": "Depuis plus de 90 ans, l'Efrei forme des ingénieurs d'exception. Notre mission est de vous donner les clés pour réussir dans un monde numérique.",
+        "description_longue": "Frederick dirige l'école avec passion et veille à ce que chaque étudiant reçoive une formation de qualité."
+    },
+    {
+        "nom": "Christophe Mouton",
+        "role": "Responsable de formation",
+        "image": "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?w=400&q=80",
+        "citation": "La réussite de nos étudiants est notre priorité. Nous mettons tout en œuvre pour offrir une pédagogie innovante.",
+        "description_longue": "Christophe s'occupe de l'organisation des cours et du suivi des intervenants professionnels."
+    },
+    {
+        "nom": "Caroline Lefèvre",
+        "role": "Coordinatrice pédagogique",
+        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80",
+        "citation": "L'accompagnement personnalisé est au cœur de notre démarche. Chaque étudiant bénéficie d'un suivi attentif.",
+        "description_longue": "Caroline aide les étudiants dans leurs démarches administratives et leur orientation."
+    },
+    {
+        "nom": "Johnny Durand",
+        "role": "Coordinateur technique",
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+        "citation": "Le département informatique est un lieu d'innovation permanente. Nous encourageons nos étudiants à explorer.",
+        "description_longue": "Johnny gère les laboratoires et les équipements informatiques du campus."
+    },
+    {
+        "nom": "Sylvain Bernard",
+        "role": "Enseignant chercheur",
+        "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
+        "citation": "Transmettre mon savoir est une passion. J'aime voir mes étudiants évoluer et devenir des experts.",
+        "description_longue": "Sylvain partage son expertise en intelligence artificielle avec les étudiants de Mastère."
+    }
+]

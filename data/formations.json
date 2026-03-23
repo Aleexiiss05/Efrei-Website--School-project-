@@ -1,0 +1,29 @@
+[
+    {
+        "nom": "BTS SIO",
+        "duree": "2 ans",
+        "icone": "bts",
+        "description": "Services Informatiques aux Organisations — option SISR ou SLAM.",
+        "objectifs": ["Administrer des systèmes et réseaux", "Développer des solutions applicatives", "Assurer la cybersécurité des SI"],
+        "prerequis": ["Baccalauréat toutes séries", "Motivation pour l'informatique", "Anglais niveau B1"],
+        "alternance": true
+    },
+    {
+        "nom": "Bachelor",
+        "duree": "3 ans",
+        "icone": "bachelor",
+        "description": "Formation généraliste en informatique avec spécialisations au choix.",
+        "objectifs": ["Maîtriser le développement web et mobile", "Gérer des projets informatiques", "Travailler en équipe agile"],
+        "prerequis": ["Bac +2 ou équivalent", "Connaissances en programmation", "Anglais niveau B2"],
+        "alternance": true
+    },
+    {
+        "nom": "Mastère",
+        "duree": "5 ans",
+        "icone": "mastere",
+        "description": "Diplôme d'ingénieur Grande École reconnu par l'État.",
+        "objectifs": ["Ingénierie logicielle avancée", "Intelligence artificielle & Data", "Management de projets tech"],
+        "prerequis": ["Bachelor ou équivalent Bac+3", "Dossier académique solide", "Anglais niveau C1"],
+        "alternance": true
+    }
+]

@@ -357,7 +357,50 @@
         justify-content: center;
     }
 
-    .dash {
-        display: none;
+}
+
+@media (max-width: 640px) {
+    .team-hero {
+        margin: 40px 5% 28px;
+    }
+
+    .hero-right h1 {
+        font-size: 30px;
+    }
+
+    .hero-left p {
+        font-size: 14px;
+    }
+
+    .team-badge {
+        font-size: 10px;
+        padding: 5px 12px;
+    }
+
+    .timeline-container {
+        margin: 40px auto;
+        padding: 0 5% 40px;
+    }
+
+    .info h3 {
+        font-size: 18px;
+    }
+
+    .info h4 {
+        font-size: 14px;
+    }
+
+    .info .since {
+        font-size: 12px;
+    }
+
+    .quote-box {
+        font-size: 13px;
+        max-width: 100%;
+    }
+
+    .avatar {
+        width: 100px;
+        height: 100px;
     }
 }

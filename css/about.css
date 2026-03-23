@@ -1,0 +1,372 @@
+.page-wrapper {
+    width: 100%;
+    padding: 0 6%;
+    box-sizing: border-box;
+}
+
+.about-hero {
+    padding: 70px 0 50px;
+}
+
+.about-hero-inner {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.about-image-wrapper {
+    flex: 0 0 46%;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.13);
+}
+
+.about-campus-img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    display: block;
+}
+
+.about-hero-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.about-hero-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0 0 30px 0;
+    line-height: 1.1;
+}
+
+.about-stats-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.about-stats-list li {
+    font-size: 15px;
+    color: #374151;
+    font-weight: 500;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.about-stats-list li::before {
+    content: '•';
+    color: #0047FF;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    font-weight: 700;
+}
+
+.alumni-section {
+    padding: 10px 0 70px;
+}
+
+.alumni-card {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    max-width: 640px;
+}
+
+.alumni-photo-wrapper {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.13);
+    border: 3px solid #e5e7eb;
+}
+
+.alumni-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.alumni-info {
+    flex: 1;
+}
+
+.alumni-info h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #111;
+    margin: 0 0 2px 0;
+}
+
+.alumni-title {
+    font-size: 13px;
+    color: #4B5563;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+}
+
+.alumni-badge {
+    display: inline-block;
+    background: #EEF2FF;
+    color: #3B52C4;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 12px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+}
+
+.alumni-quote {
+    background: #F3F6FF;
+    border-left: 3px solid #0047FF;
+    border-radius: 0 8px 8px 0;
+    padding: 13px 16px;
+    margin: 0;
+    font-size: 14px;
+    color: #374151;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+.quote-icon {
+    display: block;
+    margin-bottom: 6px;
+    opacity: 0.65;
+}
+
+.history-section {
+    padding: 20px 0 80px;
+}
+
+.history-inner {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    background: linear-gradient(135deg, #f0f4ff 0%, #e8eeff 100%);
+    border-radius: 22px;
+    padding: 56px 60px;
+}
+
+.history-image-wrapper {
+    flex: 0 0 42%;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.history-img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    display: block;
+}
+
+.history-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.history-content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #0047FF;
+    margin: 0 0 20px 0;
+}
+
+.history-content p {
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.85;
+    margin: 0;
+    font-weight: 500;
+}
+
+.faq-section {
+    padding: 0 0 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-section.page-wrapper {
+    align-items: center;
+}
+
+.faq-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: #111;
+    margin: 0 0 44px 0;
+    text-align: center;
+}
+
+.faq-list {
+    width: 100%;
+    max-width: 760px;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #E5E7EB;
+}
+
+.faq-item {
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 22px 4px;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 13.5px;
+    font-weight: 500;
+    color: #111;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    gap: 14px;
+}
+
+.faq-question:hover {
+    color: #0047FF;
+}
+
+.faq-arrow {
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    color: #9CA3AF;
+}
+
+.faq-question[aria-expanded="true"] .faq-arrow {
+    transform: rotate(180deg);
+}
+
+.faq-question[aria-expanded="true"] {
+    color: #0047FF;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.38s ease, padding 0.3s ease;
+    padding: 0 4px;
+}
+
+.faq-answer.open {
+    max-height: 220px;
+    padding-bottom: 18px;
+}
+
+.faq-answer p {
+    margin: 0;
+    font-size: 14px;
+    color: #6B7280;
+    line-height: 1.75;
+}
+
+@media (max-width: 960px) {
+    .about-hero-inner {
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .about-image-wrapper {
+        flex: none;
+        width: 100%;
+    }
+
+    .history-inner {
+        flex-direction: column;
+        padding: 36px;
+        gap: 36px;
+    }
+
+    .history-image-wrapper {
+        flex: none;
+        width: 100%;
+    }
+
+    .alumni-card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .about-hero {
+        padding: 40px 0 30px;
+    }
+
+    .page-wrapper {
+        padding: 0 5%;
+    }
+
+    .about-hero-content h1 {
+        font-size: 28px;
+    }
+
+    .about-stats-list li {
+        font-size: 14px;
+    }
+
+    .about-campus-img {
+        height: 220px;
+    }
+
+    .alumni-section {
+        padding: 10px 0 44px;
+    }
+
+    .alumni-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .alumni-photo-wrapper {
+        width: 90px;
+        height: 90px;
+    }
+
+    .alumni-info h3 {
+        font-size: 16px;
+    }
+
+    .history-inner {
+        padding: 24px;
+        gap: 24px;
+    }
+
+    .history-content h2 {
+        font-size: 24px;
+    }
+
+    .history-img {
+        height: 200px;
+    }
+
+    .faq-section h2 {
+        font-size: 26px;
+    }
+
+    .faq-question {
+        font-size: 13px;
+        padding: 18px 4px;
+    }
+}
