@@ -3,9 +3,8 @@ $chemin = '../';
 $dossier_css = '../css/';
 $dossier_js = '../js/';
 $page_active = 'cours';
-$titre_page = 'Cours & Formations | Efrei';
-
-$donnees_formations = json_decode(file_get_contents('../data/formations.json'), true);
+$titre_page = 'Efrei | Cours & Formations';
+$css_en_plus = ['cours.css'];
 
 $formulaire_envoye = false;
 $erreurs = [];
@@ -83,115 +82,212 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if (count($erreurs) == 0) {
-        $succes = "Candidature envoyée ! Merci " . $prenom . ", vous avez choisi la formation : " . $formation . ". (" . $fichiers_ok . " fichiers reçus)";
+        $succes = "Merci " . htmlspecialchars($prenom) . " " . htmlspecialchars($nom) . " ! Votre candidature pour la formation <strong>" . htmlspecialchars($formation) . "</strong> a bien été reçue. Un email de confirmation vous sera envoyé à l'adresse <strong>" . htmlspecialchars($email) . "</strong>.";
     }
 }
 
 require_once '../includes/header.php';
 ?>
 
-<section class="page-header">
-    <div class="container">
-        <h1>Nos Formations</h1>
-        <p>Découvrez nos programmes en informatique, du BTS au Mastère.</p>
+<section class="formations-hero">
+    <div class="formations-text">
+        <h1>Nos différentes<br>formations</h1>
+        <p>Nous vous proposons plusieurs formations dans notre pôle Expert du Numérique, découvrez nos formations à
+            travers nos portes ouvertes de l'année 2026 !</p>
+    </div>
+    <div class="formations-image">
+        <img src="../img/bg-1.png" alt="Étudiants diplômés">
     </div>
 </section>
 
-<section class="feature-section">
-    <div class="features-grid">
-        <?php foreach ($donnees_formations as $f): ?>
-            <div class="feature-card">
-                <div class="card-icon"><?php echo $f['icone']; ?></div>
-                <h3><?php echo $f['nom']; ?></h3>
-                <p class="card-info"><?php echo $f['duree']; ?> - <?php echo $f['description']; ?></p>
-
-                <div class="card-details">
-                    <p><strong>Objectifs :</strong></p>
-                    <ul>
-                        <?php foreach ($f['objectifs'] as $obj): ?>
-                            <li><?php echo $obj; ?></li>
-                        <?php endforeach; ?>
-                    </ul>
-                </div>
-
-                <?php if ($f['alternance']): ?>
-                    <span class="card-badge">Alternance OK</span>
-                <?php endif; ?>
-            </div>
-        <?php endforeach; ?>
+<section class="cards-section">
+    <div class="formation-card">
+        <div class="card-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2c3e50" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="8" y="2" width="8" height="6" rx="1" ry="1"></rect>
+                <path d="M12 8v4"></path>
+                <path d="M8 12H16"></path>
+                <path d="M8 12v4"></path>
+                <path d="M16 12v4"></path>
+                <rect x="4" y="16" width="8" height="6" rx="1" ry="1"></rect>
+                <rect x="12" y="16" width="8" height="6" rx="1" ry="1"></rect>
+            </svg>
+        </div>
+        <hr class="card-line">
+        <h3>BTS <span>en 2 ans</span></h3>
+    </div>
+    <div class="formation-card">
+        <div class="card-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2c3e50" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+        </div>
+        <hr class="card-line">
+        <h3>Bachelor <span>en 3 ans</span></h3>
+    </div>
+    <div class="formation-card">
+        <div class="card-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2c3e50" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+        </div>
+        <hr class="card-line">
+        <h3>Mastère <span>en 5 ans</span></h3>
     </div>
 </section>
 
-<section class="contact-form" id="inscription">
-    <div class="form-box">
-        <h2>Inscription en ligne</h2>
+<section class="info-details-dark">
+    <div class="details-grid">
+        <div class="detail-item">
+            <h4><span class="blue-dash"></span>Objectifs</h4>
+            <ul>
+                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+            </ul>
+        </div>
+        <div class="detail-item">
+            <h4><span class="blue-dash"></span>Prérequis</h4>
+            <ul>
+                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+            </ul>
+        </div>
+        <div class="detail-item">
+            <h4><span class="blue-dash"></span>Erasmus+</h4>
+            <ul>
+                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+            </ul>
+        </div>
+        <div class="detail-item">
+            <h4><span class="blue-dash"></span>Diplôme</h4>
+            <ul>
+                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+            </ul>
+        </div>
+        <div class="detail-item">
+            <h4><span class="blue-dash"></span>Admissions</h4>
+            <ul>
+                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+            </ul>
+        </div>
+        <div class="detail-item">
+            <h4><span class="blue-dash"></span>Alternance</h4>
+            <ul>
+                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
-        <?php if ($erreurs): ?>
-            <div class="error-msg">
-                <?php foreach ($erreurs as $e):
-                    echo "<p>$e</p>"; endforeach; ?>
+<section class="join-form-section" id="inscription">
+    <h2>Rejoignez-nous dès maintenant !</h2>
+
+    <?php if ($erreurs): ?>
+        <div class="error-msg">
+            <?php foreach ($erreurs as $e):
+                echo "<p>$e</p>";
+            endforeach; ?>
+        </div>
+    <?php endif; ?>
+
+    <?php if ($succes): ?>
+        <div class="success-msg">
+            <p><?php echo $succes; ?></p>
+        </div>
+    <?php endif; ?>
+
+    <form class="student-form" action="cours.php#inscription" method="POST" enctype="multipart/form-data">
+        <div class="form-row">
+            <div class="input-group">
+                <label>Prénom</label>
+                <input type="text" name="prenom" placeholder="Écrivez ici..." value="<?php echo htmlspecialchars($valeurs['prenom'] ?? ''); ?>">
             </div>
-        <?php endif; ?>
-
-        <?php if ($succes): ?>
-            <div class="success-msg">
-                <p><?php echo $succes; ?></p>
+            <div class="input-group">
+                <label>Nom</label>
+                <input type="text" name="nom" placeholder="Écrivez ici..." value="<?php echo htmlspecialchars($valeurs['nom'] ?? ''); ?>">
             </div>
-        <?php endif; ?>
-
-        <form action="cours.php#inscription" method="POST" enctype="multipart/form-data">
-            <div class="form-row">
-                <div class="form-group">
-                    <label>Prénom</label>
-                    <input type="text" name="prenom" value="<?php echo htmlspecialchars($valeurs['prenom'] ?? ''); ?>">
+        </div>
+        <div class="form-row">
+            <div class="input-group">
+                <label>Genre</label>
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <input type="radio" id="homme" name="genre" checked>
+                        <label for="homme">Homme</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="femme" name="genre">
+                        <label for="femme">Femme</label>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label>Nom</label>
-                    <input type="text" name="nom" value="<?php echo htmlspecialchars($valeurs['nom'] ?? ''); ?>">
-                </div>
             </div>
-
-            <div class="form-group">
+            <div class="input-group">
                 <label>Email</label>
-                <input type="email" name="email" value="<?php echo htmlspecialchars($valeurs['email'] ?? ''); ?>">
+                <input type="email" name="email" placeholder="exemple@email.com" value="<?php echo htmlspecialchars($valeurs['email'] ?? ''); ?>">
             </div>
-
-            <div class="form-group">
-                <label>Formation</label>
-                <select name="formation">
-                    <option value="">Sélectionner...</option>
-                    <?php foreach ($donnees_formations as $f): ?>
-                        <option value="<?php echo $f['nom']; ?>" <?php if (($valeurs['formation'] ?? '') == $f['nom'])
-                               echo 'selected'; ?>>
-                            <?php echo $f['nom']; ?>
-                        </option>
-                    <?php endforeach; ?>
-                </select>
+        </div>
+        <div class="input-group full-width">
+            <label>Choix de formation</label>
+            <select name="formation">
+                <option value="" disabled <?php if (empty($valeurs['formation'])) echo 'selected'; ?>>Choisissez votre formation souhaitée</option>
+                <option value="bts" <?php if (($valeurs['formation'] ?? '') == 'bts') echo 'selected'; ?>>BTS</option>
+                <option value="bachelor" <?php if (($valeurs['formation'] ?? '') == 'bachelor') echo 'selected'; ?>>Bachelor</option>
+                <option value="master" <?php if (($valeurs['formation'] ?? '') == 'master') echo 'selected'; ?>>Mastère</option>
+            </select>
+        </div>
+        <div class="input-group full-width">
+            <label>Votre diplôme actuel</label>
+            <select>
+                <option value="" disabled selected>Choisissez un titre ou diplôme</option>
+                <option value="bac">Baccalauréat</option>
+                <option value="bac2">Bac +2</option>
+                <option value="bac3">Bac +3</option>
+            </select>
+        </div>
+        <div class="input-group full-width">
+            <label>Message (facultatif)</label>
+            <textarea placeholder="Écrivez ici..." rows="5"></textarea>
+        </div>
+        <div class="upload-section">
+            <label class="upload-title">Fichiers à joindre</label>
+            <div class="upload-item">
+                <span>Certificat de votre diplôme</span>
+                <input type="file" name="certificat">
             </div>
-
-            <div class="file-uploads">
-                <p>Ajouter vos documents (PDF, JPG - Max 2Mo) :</p>
-                <div class="upload-item">
-                    <label>Certificat</label>
-                    <input type="file" name="certificat">
-                </div>
-                <div class="upload-item">
-                    <label>Motivation</label>
-                    <input type="file" name="motivation">
-                </div>
-                <div class="upload-item">
-                    <label>CV</label>
-                    <input type="file" name="cv">
-                </div>
-                <div class="upload-item">
-                    <label>Domicile</label>
-                    <input type="file" name="domicile">
-                </div>
+            <div class="upload-item">
+                <span>Lettre de motivation</span>
+                <input type="file" name="motivation">
             </div>
-
-            <button type="submit" class="submit-btn">Envoyer</button>
-        </form>
-    </div>
+            <div class="upload-item">
+                <span>CV (Curriculum Vitae)</span>
+                <input type="file" name="cv">
+            </div>
+            <div class="upload-item">
+                <span>Justificatif de domicile</span>
+                <input type="file" name="domicile">
+            </div>
+        </div>
+        <button type="submit" class="submit-btn">Envoyer</button>
+    </form>
 </section>
+
+<script src="../js/nav.js"></script>
 
 <?php require_once '../includes/footer.php'; ?>
