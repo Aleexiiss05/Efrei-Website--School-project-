@@ -146,51 +146,51 @@ require_once '../includes/header.php';
         <div class="detail-item">
             <h4><span class="blue-dash"></span>Objectifs</h4>
             <ul>
-                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
-                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
-                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+                <li>Vous formez pour devenir de vrai développeur</li>
+                <li>Une formation complète et pratique</li>
+                <li>Une approche axée sur la pratique</li>
             </ul>
         </div>
         <div class="detail-item">
             <h4><span class="blue-dash"></span>Prérequis</h4>
             <ul>
-                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
-                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
-                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
-                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+                <li>Un bac professionnel ou équivalent</li>
+                <li>Une motivation forte pour l'apprentissage du code</li>
+                <li>Une capacité à travailler en équipe</li>
+                <li>Une autonomie et un esprit d'initiative</li>
             </ul>
         </div>
         <div class="detail-item">
             <h4><span class="blue-dash"></span>Erasmus+</h4>
             <ul>
-                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
-                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
-                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+                <li>On vous permet de découvrir d'autres cultures et de développer votre ouverture d'esprit</li>
+                <li>Une expérience internationale enrichissante</li>
+                <li>Des opportunités de mobilité académique</li>
             </ul>
         </div>
         <div class="detail-item">
             <h4><span class="blue-dash"></span>Diplôme</h4>
             <ul>
-                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
-                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
-                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
-                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+                <li>Un diplôme reconnu par l'industrie</li>
+                <li>Une formation pratique et à jour</li>
+                <li>Des compétences transversales</li>
+                <li>Une approche centrée sur le projet</li>
             </ul>
         </div>
         <div class="detail-item">
             <h4><span class="blue-dash"></span>Admissions</h4>
             <ul>
-                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
-                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
-                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+                <li>Les candidatures sont ouvertes tout au long de l'année</li>
+                <li>Des sessions d'information et d'orientation sont organisées régulièrement</li>
+                <li>Un processus de sélection transparent et équitable</li>
             </ul>
         </div>
         <div class="detail-item">
             <h4><span class="blue-dash"></span>Alternance</h4>
             <ul>
-                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
-                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
-                <li>Lorem ipsum dolor sit amet. Ea impedit perspiciatis et Quis harum</li>
+                <li>Une opportunité de mettre en pratique vos connaissances dans un environnement professionnel</li>
+                <li>Un accompagnement personnalisé pour vous aider à trouver un poste d'alternance</li>
+                <li>Un réseau de partenaires industriels pour vous ouvrir des perspectives de carrière</li>
             </ul>
         </div>
     </div>
